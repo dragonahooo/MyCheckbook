@@ -13,6 +13,8 @@
 		C6841F141F17A78B00285D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6841F121F17A78B00285D6C /* Main.storyboard */; };
 		C6841F161F17A78B00285D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6841F151F17A78B00285D6C /* Assets.xcassets */; };
 		C6841F191F17A78B00285D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6841F171F17A78B00285D6C /* LaunchScreen.storyboard */; };
+		C6DA3C071F813F7200C883B7 /* TranslateEN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA3C061F813F7200C883B7 /* TranslateEN.swift */; };
+		C6DA3C091F813F8100C883B7 /* TranslateCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA3C081F813F8100C883B7 /* TranslateCN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C6841F151F17A78B00285D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6841F181F17A78B00285D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6841F1A1F17A78B00285D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DA3C061F813F7200C883B7 /* TranslateEN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslateEN.swift; path = utils/TranslateEN.swift; sourceTree = "<group>"; };
+		C6DA3C081F813F8100C883B7 /* TranslateCN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslateCN.swift; path = utils/TranslateCN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				C66FAF831F80FC110023A905 /* ColorUtils.swift */,
+				C6DA3C061F813F7200C883B7 /* TranslateEN.swift */,
+				C6DA3C081F813F8100C883B7 /* TranslateCN.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66FAF841F80FC110023A905 /* ColorUtils.swift in Sources */,
+				C6DA3C071F813F7200C883B7 /* TranslateEN.swift in Sources */,
 				C6841F111F17A78B00285D6C /* ViewController.swift in Sources */,
+				C6DA3C091F813F8100C883B7 /* TranslateCN.swift in Sources */,
 				C6841F0F1F17A78B00285D6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

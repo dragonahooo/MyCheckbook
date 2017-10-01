@@ -17,23 +17,23 @@ class TranslateCN
     
     static public func trans(value:Double)->String
     {
-        print(String(value) + "shu")
+//        print(String(value) + "shu")
         var dollars:String = "";
         var cents:String = "";
         
         //小数处理
         let xDecimal:Double = value - Double(Int(value));//判断是否有小数
-        print(String(xDecimal) + "xiaoshu")
+//        print(String(xDecimal) + "xiaoshu")
 
         if(xDecimal > 0)//如果有整数部分
         {
             cents = getXiaoshu(pTens: Int(round(xDecimal*100)));//把2位小数整数化 //小数点*100时候会出现很多0.1999999，保留2位处理
-            print(cents + "xiaoshu")
+//            print(cents + "xiaoshu")
         }
         
         //处理整数部分
         var pNumber:String  = String(Int(value));//获取除小数以外的字符串 //
-        print(pNumber + "zhengshu")
+//        print(pNumber + "zhengshu")
         
         var xIndex:Int = 0;
         while(pNumber != "")//切整个数字字符串
@@ -42,12 +42,12 @@ class TranslateCN
             {
                 pNumber = "0000" + pNumber;
                 pNumber = pNumber.substring(from: pNumber.index(pNumber.endIndex, offsetBy: -4));
-                print(pNumber + "令zheng")
+//                print(pNumber + "令zheng")
             }
 
             var xQian:String = ""
             let xValue:String = pNumber.substring(from: pNumber.index(pNumber.endIndex, offsetBy: -4));//获取字符串最右4个数
-            print(xValue + "四个")
+//            print(xValue + "四个")
             if (Int(xValue) != 0)
             {
                 let q:Int = Int(Int(xValue)!/1000);
@@ -55,17 +55,17 @@ class TranslateCN
                 let t:Int = Int(Int(xValue)! - q*1000 - h*100);
                 if(q != 0)//千位不为0
                 {
-                    print(String(q) + "q")
+//                    print(String(q) + "q")
                     xQian = getDigit(pDigit: q) + "仟";
                 }
                 if(h != 0)//百位不为0
                 {
-                    print(String(q) + "b")
+//                    print(String(q) + "b")
                     xQian += getDigit(pDigit: h) + "佰";
                 }
                 if(t != 0)
                 {
-                    print(String(q) + "s")
+//                    print(String(q) + "s")
                     xQian += getTens(pTens: t);
                 }
             }

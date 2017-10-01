@@ -61,8 +61,6 @@ class ViewController: UIViewController {
         
         _currentNum = value;
         
-        print(_currentNum);
-        
         if(_currentNum <= 0.0 || _currentNum <= 0)//init
         {
             _dotMode = false;
@@ -87,7 +85,6 @@ class ViewController: UIViewController {
             self.btnCancelInput.isHidden = false;
             
             self.showEN.text = TranslateEN.trans(value: _currentNum);
-            print(_currentNum);
             self.showCN.text = TranslateCN.trans(value: _currentNum);
             
         }

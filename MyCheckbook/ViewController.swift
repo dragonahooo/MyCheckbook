@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            layCNHeight.constant = 130;
+            layCNHeight.constant = 140;
             showEN.font = UIFont.systemFont(ofSize: 20)//20;
             showCN.font = UIFont.systemFont(ofSize: 24)//24;
             input.font = UIFont.systemFont(ofSize: 60)//60;

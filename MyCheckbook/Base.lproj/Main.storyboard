@@ -47,13 +47,13 @@
                                     <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPS-Nt-Obn"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="FIVE THOUSAND FIVE HUNDRED SIXTY SEVEN AND 25/100" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="neK-gx-HrG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="FIVE THOUSAND FIVE HUNDRED SIXTY SEVEN AND 25/100" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="neK-gx-HrG">
                                 <rect key="frame" x="20" y="191" width="374" height="129"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="五千五百六十七点二五元整" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="7be-6K-nvR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="五千五百六十七点二五元整" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="7be-6K-nvR">
                                 <rect key="frame" x="20" y="38" width="374" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="bXj-U9-DKX"/>

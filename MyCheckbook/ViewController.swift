@@ -63,13 +63,7 @@ class ViewController: UIViewController {
         
         if(_currentNum <= 0.0 || _currentNum <= 0)//init
         {
-            _dotMode = false;
-            _dotindex = 0;
-            _numStr = "0";
-            self.btnCancelInput.isHidden = true;
-            
-            self.showEN.text = "";
-            self.showCN.text = "";
+            initUI();
         }
         else
         {
@@ -145,13 +139,14 @@ class ViewController: UIViewController {
     {
         if(!_dotMode)
         {
-            if(String(Int(_currentNum * 10 + Double(value))).characters.count > 11)//整数太长会报错 千亿
+            if(String(Int(_currentNum * 10 + Double(value))).characters.count > 12)//整数太长会报错 千亿
             {
                 return;
             }
             setNumbers(value: _currentNum * 10 + Double(value));
         }
-        else{
+        else
+        {
             if(_dotindex > 2)//只限2位小数
             {
                 return;
@@ -172,6 +167,11 @@ class ViewController: UIViewController {
     
     func addInput(value: String)
     {
+        if(_dotMode && value == ".")//在小数模式中，不能无止尽的加 .
+        {
+            return;
+
+        }
         if(!_dotMode)
         {
             _dotindex = 1;
@@ -185,7 +185,53 @@ class ViewController: UIViewController {
 
     func removeLastStr()
     {
+        if(_numStr == "0" || _numStr == "")//不处理 0 的情况
+        {
+            return;
+        }
+        if(_numStr.characters.count == 1)//处理 只有1个数的时候，移除都默认置为0
+        {
+            setNumbers(value: 0.0);
+            return;
+        }
         
+        if(_numStr.characters.last == ".")//当要移除的是小数点 . 的时候，小数点模式为false
+        {
+            _dotMode = false;
+        }
+        if(_dotMode)//当为小数点模式时候，每移除一个，dotindex相应-1
+        {
+            _dotindex -= 1;
+        }
+
+        //处理面板显示部分，移除到哪，就显示到哪。
+        var newNum:String = "";
+        newNum.characters = _numStr.characters.dropLast();
+        print(newNum);
+        
+        //再根据面板显示 反响 附值给_currentNum 并翻译
+        _numStr = newNum;
+        _currentNum = Double(newNum)!;
+        self.input.text = _numStr;
+        self.showEN.text = TranslateEN.trans(value: _currentNum);
+        self.showCN.text = TranslateCN.trans(value: _currentNum);
+        
+        //最终为0时使用清空处理
+        if(newNum == "0")
+        {
+            initUI();
+        }
+        
+    }
+    
+    func initUI()
+    {
+        _dotMode = false;
+        _dotindex = 0;
+        _numStr = "0";
+        self.btnCancelInput.isHidden = true;
+        self.showEN.text = "";
+        self.showCN.text = "";
     }
 
     

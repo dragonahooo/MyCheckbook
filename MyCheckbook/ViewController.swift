@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -36,6 +37,9 @@ class ViewController: UIViewController {
     var _dotMode:Bool = false;
     var _dotindex:uint = 0;
     
+    //建立的SystemSoundID对象
+    var soundID:SystemSoundID = 1104;//1103-1105
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = ColorUtils.APP_BG_COLOR;
@@ -43,6 +47,7 @@ class ViewController: UIViewController {
         self.padBg.image = UIImage(named: "number_pad_bg");
         self.inputBg.image = UIImage(named: "number_input_bg");
         self.btnCancelInput.imageView?.image = UIImage(named: "icon_cancel");
+        
         
         initWords();
         
@@ -68,7 +73,7 @@ class ViewController: UIViewController {
         else
         {
             layCNHeight.constant = 140;
-            showEN.font = UIFont.systemFont(ofSize: 20)//20;
+            showEN.font = UIFont.systemFont(ofSize: 18)//20;
             showCN.font = UIFont.systemFont(ofSize: 24)//24;
             input.font = UIFont.systemFont(ofSize: 60)//60;
             setBtnFontSize(value: 30);
@@ -178,8 +183,21 @@ class ViewController: UIViewController {
                 break;
         }
         
+        
+        //提醒（同上面唯一的一个区别）
+        AudioServicesPlaySystemSound(soundID)
+        
     }
     
+    @IBAction func numberTouchIn(_ sender: UIButton) {
+        
+        sender.backgroundColor = nil;
+    }
+    
+    @IBAction func numberTouchDown(_ sender: UIButton) {
+        
+        sender.backgroundColor = UIColor.gray.withAlphaComponent(0.1);
+    }
     func addNum(value:uint)
     {
         if(!_dotMode)
@@ -264,7 +282,8 @@ class ViewController: UIViewController {
         //最终为0时使用清空处理
         if(newNum == "0")
         {
-            initUI();
+             setNumbers(value: 0.0);
+//            initUI();
         }
         
     }

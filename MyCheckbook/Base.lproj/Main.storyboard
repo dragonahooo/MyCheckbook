@@ -111,6 +111,7 @@
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2oy-LD-kyp"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="jg4-gm-SbE"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Lv-KZ-3Yo"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="hUm-CW-A9S"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhQ-nU-Au8">
@@ -123,6 +124,7 @@
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukj-aM-0Ro"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="VEz-Bk-2ow"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jw2-J8-7FJ"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Sld-lq-KeV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aE-8D-LJS">
@@ -134,6 +136,7 @@
                                         <connections>
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9f-tx-W6X"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="r2r-1f-0Oh"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="2c0-WW-LtD"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jP1-CP-1ob"/>
                                         </connections>
                                     </button>
@@ -146,6 +149,7 @@
                                         <connections>
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0eL-gt-QLf"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="SkB-At-wzP"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="B51-Ct-y3t"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y3D-uq-IAt"/>
                                         </connections>
                                     </button>
@@ -158,6 +162,7 @@
                                         <connections>
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Joh-Xj-cgM"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="by7-5v-Y1L"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="hNL-DV-fPN"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbW-jN-nEa"/>
                                         </connections>
                                     </button>
@@ -170,6 +175,7 @@
                                         <connections>
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2P-c3-aFa"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="FNE-KF-Xvg"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="8vt-lK-ZGh"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ka7-SF-asr"/>
                                         </connections>
                                     </button>
@@ -183,6 +189,7 @@
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCN-vM-2C9"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="unT-qU-1ig"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5D-NE-JTz"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Z7B-hs-QnG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1N-wL-TAD">
@@ -195,6 +202,7 @@
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBb-4E-lr6"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="zSf-n6-JwS"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pk3-QI-go8"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="tZ0-mU-6M0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-d9-ew9">
@@ -206,6 +214,7 @@
                                         <connections>
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5S-ya-nlh"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="AZa-pt-YvF"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="AhF-Lz-zWF"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAa-5a-awM"/>
                                         </connections>
                                     </button>
@@ -219,6 +228,7 @@
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AnH-bg-5gf"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="R3X-zq-SIN"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnI-xD-mog"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="wDz-wI-zGD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjK-QU-5cw">
@@ -230,6 +240,7 @@
                                         <connections>
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phL-MC-Bp9"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="8bd-n9-3S7"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="34i-cV-kEf"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf3-tC-Qru"/>
                                         </connections>
                                     </button>
@@ -243,6 +254,7 @@
                                             <action selector="btnNumberClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7q-Oz-qqY"/>
                                             <action selector="numberTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ofs-BT-8nS"/>
                                             <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aE-Sm-ZgK"/>
+                                            <action selector="numberTouchIn:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="AF6-R2-otg"/>
                                         </connections>
                                     </button>
                                 </subviews>

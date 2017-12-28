@@ -70,21 +70,33 @@ class TranslateEN
         switch(dollars)
         {
             case "":
-                dollars = "No dollars"
+                dollars = "No dollars";
+                break;
             case "One":
-                dollars = "One Dollar"
+                dollars = "One Dollar";
+                break;
+            case "One ":
+                dollars = "One Dollar";
+                break;
             default:
-                dollars += " dollars"
+                dollars += " dollars";
+                break;
         }
 
         switch(cents)
         {
             case "":
-                cents = " Only"
+                cents = " Only";
+                break;
             case "One":
-                cents = " and One Cent"
+                cents = " and One Cent";
+                break;
+            case "One ":
+                cents = " and One Cent";
+                break;
             default:
-                cents = " and " + cents + " cents"
+                cents = " and " + cents + " cents";
+                break;
         }
         let spellNumberToEnglish:String = dollars + cents
 

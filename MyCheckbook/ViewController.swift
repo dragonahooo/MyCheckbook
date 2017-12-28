@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AudioToolbox
+//import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     var _dotindex:uint = 0;
     
     //建立的SystemSoundID对象
-    var soundID:SystemSoundID = 1104;//1103-1105
+//    var soundID:SystemSoundID = 1104;//1103-1105
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -185,7 +185,7 @@ class ViewController: UIViewController {
         
         
         //提醒（同上面唯一的一个区别）
-        AudioServicesPlaySystemSound(soundID)
+//        AudioServicesPlaySystemSound(soundID)
         
     }
     
@@ -282,8 +282,7 @@ class ViewController: UIViewController {
         //最终为0时使用清空处理
         if(newNum == "0")
         {
-             setNumbers(value: 0.0);
-//            initUI();
+            initUI();
         }
         
     }
@@ -294,8 +293,8 @@ class ViewController: UIViewController {
         _dotindex = 0;
         _numStr = "0";
         self.btnCancelInput.isHidden = true;
-        self.showEN.text = "";
-        self.showCN.text = "";
+        self.showEN.text = TranslateEN.trans(value: 0);
+        self.showCN.text = TranslateCN.trans(value: 0);
     }
 
     

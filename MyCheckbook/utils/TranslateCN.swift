@@ -88,15 +88,21 @@ class TranslateCN
         switch(dollars)
         {
             case "":
-                dollars = "零圆"
+                dollars = "零圆";
+                break;
+            case " ":
+                dollars = "零圆";
+                break;
             default:
-                dollars += "圆"
+                dollars += "圆";
+                break;
         }
         
         switch(cents)
         {
             case "":
-                cents = "整"
+                cents = "整";
+                break;
             default:
                 //
                 break;
